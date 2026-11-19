@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=https://lefthook.dev/schema.json
+
+pre-commit:
+  parallel: true
+  jobs:
+    - name: typecheck
+      run: npm run typecheck
+    - name: biome
+      run: npm run check
